@@ -25,7 +25,7 @@ class raises_regexp(object):
         self.excinfo.__init__((exc_type, exc_val, exc_tb))
 
         if not issubclass(exc_type, self.exception):
-            pytest.fail('%s RAISED instead of %s' % (exc_type, self.exception))
+            pytest.fail('%s RAISED instead of %s\n%s' % (exc_type, self.exception, repr(exc_val)))
 
         if not re.search(self.regexp, str(exc_val)):
             pytest.fail('pattern "%s" not found in "%s"' % (self.regexp, str(exc_val)))

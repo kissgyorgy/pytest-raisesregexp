@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+from __future__ import unicode_literals
 import re
 import py.code
 import pytest
@@ -20,14 +23,17 @@ class raises_regexp(object):
     def __exit__(self, exc_type, exc_val, exc_tb):
         __tracebackhide__ = True
         if exc_type is None:
-            pytest.fail('DID NOT RAISE %s' % self.exception)
+            pytest.fail('DID NOT RAISE {}'.format(self.exception))
 
         self.excinfo.__init__((exc_type, exc_val, exc_tb))
 
         if not issubclass(exc_type, self.exception):
-            pytest.fail('%s RAISED instead of %s\n%s' % (exc_type, self.exception, repr(exc_val)))
+            pytest.fail('{} RAISED instead of {}\n{}'.format(exc_type,
+                                                             self.exception,
+                                                             repr(exc_val)))
 
         if not re.search(self.regexp, str(exc_val)):
-            pytest.fail('pattern "%s" not found in "%s"' % (self.regexp, str(exc_val)))
+            pytest.fail('Pattern "{}" not found in "{}"'.format(self.regexp,
+                                                                str(exc_val)))
 
         return True

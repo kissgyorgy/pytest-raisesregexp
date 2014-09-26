@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from setuptools import setup
 
 
 setup(
-    author='Kiss György',
+    author=u'Kiss György',
     author_email='kissgyorgy@me.com',
     url='https://github.com/Walkman/pytest_raisesregexp',
     description='Simple pytest plugin to look for regex in Exceptions',

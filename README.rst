@@ -1,6 +1,8 @@
 pytest-raisesregexp
 ===================
 
+|travis| |pythons| |release| |license| |downloads| |wheel|
+
 I really missed `assertRaisesRegexp` in unittest module from ``pytest``,
 so I wrote this simple plugin.
 
@@ -47,3 +49,27 @@ LICENSE
 
 MIT license
 Copyright (c) 2013-2014 Kiss György
+
+
+.. |travis| image:: https://travis-ci.org/Walkman/pytest-raisesregexp.svg?branch=master
+    :target: https://travis-ci.org/Walkman/pytest-raisesregexp
+
+.. |pythons| image:: https://pypip.in/py_versions/pytest-raisesregexp/badge.svg?style=flat
+   :target: https://pypi.python.org/pypi/pytest-raisesregexp/
+   :alt: Supported Python versions
+
+.. |release| image:: https://pypip.in/version/pytest-raisesregexp/badge.svg?style=flat
+   :target: https://pypi.python.org/pypi/pytest-raisesregexp/
+   :alt: Latest Version
+
+.. |license| image:: https://pypip.in/license/pytest-raisesregexp/badge.svg?style=flat
+   :target: https://github.com/Walkman/pytest-raisesregexp/blob/master/LICENSE
+   :alt: MIT License
+
+.. |downloads| image:: https://pypip.in/download/pytest-raisesregexp/badge.svg?style=flat
+   :target: https://pypi.python.org/pypi/pytest-raisesregexp/
+   :alt: Downloads
+
+.. |wheel| image:: https://pypip.in/wheel/pytest-raisesregexp/badge.svg?style=flat
+   :target: https://pypi.python.org/pypi/pytest-raisesregexp/
+   :alt: Wheel package

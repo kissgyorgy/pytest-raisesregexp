@@ -14,15 +14,15 @@ def function_to_test():
 
 
 def function_to_test_with_args(arg1, arg2):
-    raise ExpectedException('Arg params: {}, {}'.format(arg1, arg2))
+    raise ExpectedException('Arg params: {0}, {1}'.format(arg1, arg2))
 
 
 def _function_to_test_with_kwargs(kwarg1='kw1', kwarg2='kw2'):
-    raise ExpectedException('Kwarg params: {}, {}', kwarg1, kwarg2)
+    raise ExpectedException('Kwarg params: {0}, {1}', kwarg1, kwarg2)
 
 
 def function_to_test_with_args_and_kwargs(*args, **kwargs):
-    raise ExpectedException('Args and kwargs raised: {}, {}'.format(args, kwargs))
+    raise ExpectedException('Args and kwargs raised: {0}, {1}'.format(args, kwargs))
 
 
 

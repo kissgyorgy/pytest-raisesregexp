@@ -10,7 +10,7 @@ Usage
 .. code-block:: python
 
     # some_module.py
-    class ExpectedException():
+    class ExpectedException(Exception):
     	pass
 
     def function_to_test():
@@ -46,3 +46,4 @@ LICENSE
 -------
 
 MIT license
+Copyright (c) 2013-2014 Kiss György

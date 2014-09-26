@@ -7,6 +7,7 @@ python:
     - "pypy"
     - "pypy3"
 install:
-    - "python setup.py install"
+    - "pip install ."
     - "pip install py"
+    - "pip install pytest"
 script: py.test

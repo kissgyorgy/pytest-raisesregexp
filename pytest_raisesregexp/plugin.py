@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
 from __future__ import unicode_literals
+
 import re
 import py.code
 import pytest
@@ -16,6 +16,7 @@ class raises_regexp(object):
         self.exception = expected_exception
         self.regexp = regexp
         self.excinfo = None
+
         if args:
             with self:
                 args[0](*args[1:], **kwargs)
@@ -26,6 +27,7 @@ class raises_regexp(object):
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         __tracebackhide__ = True
+
         if exc_type is None:
             pytest.fail('DID NOT RAISE {0}'.format(self.exception))
 

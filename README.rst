@@ -48,28 +48,28 @@ LICENSE
 -------
 
 MIT license
-Copyright (c) 2013-2014 Kiss György
+Copyright (c) 2013-2015 Kiss György
 
 
-.. |travis| image:: https://travis-ci.org/Walkman/pytest-raisesregexp.svg?branch=master
-    :target: https://travis-ci.org/Walkman/pytest-raisesregexp
+.. |travis| image:: https://travis-ci.org/kissgyorgy/pytest-raisesregexp.svg?branch=master
+    :target: https://travis-ci.org/kissgyorgy/pytest-raisesregexp.svg?branch=master
 
-.. |pythons| image:: https://pypip.in/py_versions/pytest-raisesregexp/badge.svg?style=flat
+.. |pythons| image:: https://img.shields.io/pypi/pyversions/pytest-raisesregexp.svg
    :target: https://pypi.python.org/pypi/pytest-raisesregexp/
    :alt: Supported Python versions
 
-.. |release| image:: https://pypip.in/version/pytest-raisesregexp/badge.svg?style=flat
+.. |release| image:: https://img.shields.io/pypi/v/pytest-raisesregexp.svg
    :target: https://pypi.python.org/pypi/pytest-raisesregexp/
    :alt: Latest Version
 
-.. |license| image:: https://pypip.in/license/pytest-raisesregexp/badge.svg?style=flat
-   :target: https://github.com/Walkman/pytest-raisesregexp/blob/master/LICENSE
+.. |license| image:: https://img.shields.io/github/license/kissgyorgy/pytest-raisesregexp.svg
+   :target: https://github.com/kissgyorgy/pytest-raisesregexp/blob/master/LICENSE
    :alt: MIT License
 
-.. |downloads| image:: https://pypip.in/download/pytest-raisesregexp/badge.svg?style=flat
+.. |downloads| image:: https://img.shields.io/pypi/dm/pytest-raisesregexp.svg
    :target: https://pypi.python.org/pypi/pytest-raisesregexp/
    :alt: Downloads
 
-.. |wheel| image:: https://pypip.in/wheel/pytest-raisesregexp/badge.svg?style=flat
+.. |wheel| image:: https://img.shields.io/pypi/wheel/pytest-raisesregexp.svg
    :target: https://pypi.python.org/pypi/pytest-raisesregexp/
    :alt: Wheel package

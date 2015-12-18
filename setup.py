@@ -11,7 +11,7 @@ setup(
     long_description=io.open('README.rst', encoding='utf-8').read(),
     name='pytest-raisesregexp',
     packages=['pytest_raisesregexp'],
-    version='2.0',
+    version='2.1',
     install_requires=['py', 'pytest'],
     # the following makes a plugin available to py.test
     entry_points={

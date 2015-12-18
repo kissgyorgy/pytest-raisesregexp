@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
+import io
 
 
 setup(
@@ -7,7 +8,7 @@ setup(
     author_email='kissgyorgy@me.com',
     url='https://github.com/Walkman/pytest_raisesregexp',
     description='Simple pytest plugin to look for regex in Exceptions',
-    long_description=open('README.rst').read(),
+    long_description=io.open('README.rst', encoding='utf-8').read(),
     name='pytest-raisesregexp',
     packages=['pytest_raisesregexp'],
     version='2.0',

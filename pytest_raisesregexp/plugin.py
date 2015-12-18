@@ -34,12 +34,11 @@ class raises_regexp(object):
         self.excinfo.__init__((exc_type, exc_val, exc_tb))
 
         if not issubclass(exc_type, self.exception):
-            pytest.fail('{0} RAISED instead of {1}\n{2}'.format(exc_type,
-                                                                self.exception,
-                                                                repr(exc_val)))
+            pytest.fail('{0} RAISED instead of {1}\n{2!r}'
+                        .format(exc_type, self.exception, exc_val))
 
         if not re.search(self.regexp, str(exc_val)):
-            pytest.fail('Pattern "{0}" not found in "{1}"'.format(self.regexp,
-                                                                  str(exc_val)))
+            pytest.fail('Pattern "{0}" not found in "{1!s}"'
+                        .format(self.regexp, exc_val))
 
         return True
